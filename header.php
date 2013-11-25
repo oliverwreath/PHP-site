@@ -22,8 +22,6 @@ h1
 	font-size: 46pt;
 	margin: 10px 0 0 0;
 	font-weight: bold;
-	-webkit-text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-	-moz-text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 	color: #777;
 }
@@ -81,16 +79,11 @@ a.skip:hover
 div.download_bar
 {
 	background-color: #eee;
-	background-image: linear-gradient(top, #eee 0, #ddd 100%);
-	background-image: -o-linear-gradient(top, #eee 0, #ddd 100%);
-	background-image: -moz-linear-gradient(top, #eee 0, #ddd 100%);
-	background-image: -webkit-linear-gradient(top, #eee 0, #ddd 100%);
-	background-image: -ms-linear-gradient(top, #eee 0, #ddd 100%);
 }
 
 #download-container
 {
-	width: 500px;
+	width: auto;
 	padding-top: 20px;
 	padding-bottom: 10px;
 	position: relative;
@@ -101,18 +94,7 @@ div.download_bar
 	font-size: 24px;
 	color: #123d54;
 	background: #9CC9E9;
-	background: -moz-linear-gradient(top, #afd9fa 0%, #588fad);
-	background: -webkit-gradient(linear, left top, left bottom, from(#afd9fa), to(#588fad));
 	border-radius: 6px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border: 1px solid #3a75b1;
-	-moz-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,1);
-	-webkit-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,1);
 	text-shadow:
 		0px -1px 0px rgba(000,000,000,0.7),
 		0px 1px 0px rgba(255,255,255,0.3);
@@ -136,10 +118,6 @@ div.download_bar
 	position:relative;
 	text-align:center;
 	width:400px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	-moz-box-shadow:0 0 5px #888888;
-	-webkit-box-shadow:0 0 5px #888888;
 }
 .extra-bubble-arrow-border
 {
@@ -177,11 +155,7 @@ div.download_bar
 
 div.features_band
 {
-	background-image: linear-gradient(top, #f3f3f3 0, #fff 200px);
-	background-image: -o-linear-gradient(top, #f3f3f3 0, #fff 200px);
-	background-image: -moz-linear-gradient(top, #f3f3f3 0, #fff 200px);
-	background-image: -webkit-linear-gradient(top, #f3f3f3 0, #fff 200px);
-	background-image: -ms-linear-gradient(top, #f3f3f3 0, #fff 200px);
+
 }
 
 div.section
@@ -210,7 +184,7 @@ display: inline;
 ul#menu li a 
 {
 background-color: #ffffff;
-padding: 10px 20px;
+padding: 10px 10px ;
 text-decoration: none;
 line-height: 2.8em;
 color: #666;

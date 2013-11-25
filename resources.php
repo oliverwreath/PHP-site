@@ -1,9 +1,6 @@
 <?php include_once("header.php")  ?>
 
 <body>
-	<style>
-	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
-	</style>
 	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 	</script>
 	<script type="text/javascript">
@@ -11,14 +8,13 @@
 	urchinTracker();
 	</script>
 
-	<div style="position: relative; width: 100%">
-	<center>
+	<div style="position: relative; width: 100%; display:inline; text-align: center;">
 	
 		<?php include_once("navi.php") ?>
 
-		<div style="width: 960px">
+		<div>
 			<h1><span class="title1">Yanliang</span> H.</h1>
-			<p style="font-size: 16px; width: 650px; margin-top: 0px">Master of Computer Science in University of Illinois at Urbana-Champaign</p>
+			<p>Master of Computer Science in University of Illinois at Urbana-Champaign</p>
 			<p>ACM, IEEE Member</p>
 		</div>
 
@@ -50,12 +46,12 @@
 							</tr>
 							<tr>
 								<td>
-									<a href="http://dl.acm.org/dl.cfm?CFID=179366373&CFTOKEN=27402769" target="_blank">ACM</a>
+									<a href="http://dl.acm.org" target="_blank">ACM</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<a href="http://ieeexplore.ieee.org/Xplore/home.jsp?tag=1" target="_blank">IEEE</a>
+									<a href="http://ieeexplore.ieee.org/" target="_blank">IEEE</a>
 								</td>
 							</tr>
 							<tr>
@@ -111,7 +107,6 @@
 
 		<?php include_once("footer.php") ?>
 
-	</center>
 	</div>
 
 </body>

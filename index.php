@@ -1,9 +1,6 @@
 <?php include_once("header.php")  ?>
 
 <body>
-	<style>
-	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
-	</style>
 	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 	</script>
 	<script type="text/javascript">
@@ -11,14 +8,13 @@
 	urchinTracker();
 	</script>
 
-	<div style="position: relative; width: 100%">
-	<center>
+	<div style="position: relative; width: 100%; display:inline; text-align: center;">
 	
 		<?php include_once("navi.php") ?>
 
-		<div style="width: 960px">
+		<div>
 			<h1><span class="title1">Yanliang</span> H.</h1>
-			<p style="font-size: 16px; width: 650px; margin-top: 0px">Master of Computer Science in University of Illinois at Urbana-Champaign</p>
+			<p>Master of Computer Science in University of Illinois at Urbana-Champaign</p>
 			<p>ACM, IEEE Member</p>
 		</div>
 
@@ -33,10 +29,10 @@
 									<h3>Panorama Stitching</h3>
 									<div>
 										<a href="/pics/Capture33.jpg"  target="_blank">
-											<img style="width:100%" src="http://www.skywalkerhunter.com/pictures/Capture33.jpg" alt="Panorama Stitching! Yee, Haw!" />
+											<img style="width:100%" src="/pics/Capture33.jpg" alt="Panorama Stitching! Yee, Haw!" />
 										</a>
 										<a href="/pics/Capture32.jpg"  target="_blank">
-											<img style="width:100%" src="http://www.skywalkerhunter.com/pictures/Capture32.jpg" alt="Panorama Stitching! Yee, Haw!" />
+											<img style="width:100%" src="/pics/Capture32.jpg" alt="Panorama Stitching! Yee, Haw!" />
 										</a>
 									</div>
 								</td>
@@ -54,7 +50,7 @@
 								</td>
 							</tr>
 						</table>
-						<h3>Research Interests: Compilers, Object-Oriented Programming, Machine Learning, Computer Vision, Data Mining, Algorithms, Information Security and bringing improvements to people's life with cutting-edge technologies.</h3> 
+						<h3>Research Interests: Algorithms, Computer Vision, Data Mining, Compilers, Object-Oriented Programming and Information Security.</h3> 
 					</td>
 				</tr>
 			</table>
@@ -62,7 +58,7 @@
 
 		<?php include_once("footer.php") ?>
 
-	</center>
+
 	</div>
 
 </body>
