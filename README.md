@@ -1,4 +1,8 @@
 demo-site
 =========
 
-for personal demonstration.
+a PHP and JS Framework 
+
+for demonstration
+
+#### Have Fun!!
