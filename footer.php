@@ -1,4 +1,3 @@
-
 		<div class="download_bar">
 			<div id="download-container">
 				
@@ -23,6 +22,6 @@
 				</a>
 				</p>
 				<hr/>
-				<p style="font-size: 10pt">© 2014 Yanliang H.</p>
+				<p style="color: grey;">© 2014 Yanliang H.</p>
 			</div>
 		</div>
