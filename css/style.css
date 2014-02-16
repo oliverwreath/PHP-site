@@ -29,6 +29,21 @@ h4{
 	color: #555;
 }
 
+div.responsive_wrapper{
+	display: flex;
+	width:90%;
+	margin: auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div.responsive_cell{
+	width:33.3%;
+	min-width: 280px;
+	max-width: 600px;
+}
+
 .title1 { color: #666 }
 
 a { color: black; }
@@ -74,21 +89,6 @@ div.container{
 	width: 100%; 
 	display:inline; 
 	text-align: center;
-}
-
-div.responsive_wrapper{
-	display: flex;
-	width:90%;
-	margin: auto;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-div.responsive_wrapper span{
-	width:50%;
-	min-width: 280px;
-	max-width: 600px;
 }
 
 div.download_bar

@@ -8,6 +8,7 @@
 			<li><a href = "Academic.php">Academic</a></li>
 			<li>|</li>
 			<li><a href = "Web_Lab.php">Web Lab</a></li>
+			<li><a href = "clock1.php">clock</a></li>
 		</ul>
 		<div id="google_translate_element" style="text-align: right"></div>
 		<div>

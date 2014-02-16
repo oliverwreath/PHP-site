@@ -15,7 +15,7 @@
 			<div class="band">
 				<h3>Academic Experience</h3>
 				<div class="responsive_wrapper">
-					<span style="width: 70%; max-width: 9999px;">
+					<div class="responsive_cell" style="width: 70%; max-width: 9999px;">
 						<h4>Selected Academic Projects</h4>
 						<ul style="text-align: left;">
 							<li>Algorithms Fantasy C++ library (2013): Built randomized-Quicksort 190% efficient than the mature Merge-sort; Designed Two-way Selection-sort that is 160% efficient than the original; Binary search tree; Rotated array Stack.</li>
@@ -24,7 +24,7 @@
 							<li>Team Leader in Mobile Multiparty Authentication System (MMAS) (2010). Lead my team to win the 3rd Prize in National Information Security Contest among over 500 top competitors. Implement the MIT Kerberos.</li>
 							<li>Object Oriented Tic-tac-toe (2013). Smalltalk-based Ultimate Tic-tac-toe Implementation with Seaside framework. With a series of AI support.</li>										
 						</ul>
-					</span>
+					</div>
 				</div>
 				<h4>Interests: Algorithms, Computer Vision, Data Mining, Compilers, Object-Oriented Programming and Information Security.</h4> 
 			</div>

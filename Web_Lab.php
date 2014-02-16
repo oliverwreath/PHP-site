@@ -66,13 +66,13 @@
 			<div class="band">
 				<h3>Web Lab</h3>
 				<div class="responsive_wrapper">
-					<span style="width: 80%; min-width: 280px; max-width: 900px; height:300px">
+					<div class="responsive_cell" style="width: 80%; min-width: 280px; max-width: 900px; height:300px">
 						<div id="map-canvas"></div>
-					</span>
-					<span style="max-width: 300px;">	
+					</div>
+					<div class="responsive_cell" style="max-width: 300px;">	
 						<script type="text/javascript" src="http://jk.revolvermaps.com/2/1.js?i=a7yrrtif3ut&amp;s=220&amp;m=0&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script>
-					</span>
-					<span style="max-width: 300px;">
+					</div>
+					<div class="responsive_cell" style="max-width: 300px;">
 						<h4>JavaScript</h4>
 						<script>
 							function changeTextRed()
@@ -95,8 +95,8 @@
 							<button type="button" onclick="changeTextRed()">Red</button>
 							<button type="button" onclick="changeTextGreen()">Green</button>
 							<button type="button" onclick="changeTextBlue()">Blue</button>
-					</span>
-					<span style="max-width: 300px;">
+					</div>
+					<div class="responsive_cell" style="max-width: 300px;">
 						<script>
 						function changeLight()
 						{
@@ -112,7 +112,7 @@
 						}
 						</script>
 						<img id="light" src="/pics/pic_bulbon.gif" alt="js switching light pic" onClick="changeLight()">
-					<span>
+					</div>
 				</div>
 				<h4>Interests: Algorithms, Computer Vision, Data Mining, Compilers, Object-Oriented Programming and Information Security.</h4> 
 			</div>
