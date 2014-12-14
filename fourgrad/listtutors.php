@@ -30,30 +30,30 @@ if (!tutors ) {
 	<TH>AVG RATING</TH>
 
 	<?php
-	while($row = mysql_fetch_array($tutors))
-	{
-
-
-		$username = $row['name'];
-		$email = $row['email'];
-
-		echo "<TR>";
-		echo "\t<TD>".$row['id'] . "</TD>\n";
-		echo "\t<TD>".$row['name'] . "</TD>\n";
-		echo "\t<TD>".$row['email'] . "</TD>\n";
-		echo "\t<TD>".$row['language'] . "</TD>\n";
-		echo "\t<TD>".$row['education'] . "</TD>\n";
-		echo "\t<TD>".$row['Name'] . "</TD>\n";
-		echo "\t<TD>".$row['Title'] . "</TD>\n";
-		echo "\t<TD>".$row['Major'] . "</TD>\n";
-		echo "\t<TD>".$row['Number'] . "</TD>\n";
-		echo "\t<TD>".$row['price'] . "</TD>\n";
-		echo "\t<TD>".$row['avgRating'] . "</TD>\n";
-
-		echo "</TR>\n";
-
-	}
-	echo "</TABLE>";
-	mysql_close($con);
+		while($row = mysql_fetch_array($tutors))
+		{
+	
+	
+			$username = $row['name'];
+			$email = $row['email'];
+	
+			echo "<TR>";
+			echo "\t<TD>".$row['id'] . "</TD>\n";
+			echo "\t<TD>".$row['name'] . "</TD>\n";
+			echo "\t<TD>".$row['email'] . "</TD>\n";
+			echo "\t<TD>".$row['language'] . "</TD>\n";
+			echo "\t<TD>".$row['education'] . "</TD>\n";
+			echo "\t<TD>".$row['Name'] . "</TD>\n";
+			echo "\t<TD>".$row['Title'] . "</TD>\n";
+			echo "\t<TD>".$row['Major'] . "</TD>\n";
+			echo "\t<TD>".$row['Number'] . "</TD>\n";
+			echo "\t<TD>".$row['price'] . "</TD>\n";
+			echo "\t<TD>".$row['avgRating'] . "</TD>\n";
+	
+			echo "</TR>\n";
+	
+		}
+		echo "</TABLE>";
+		mysql_close($con);
 	?>
 </TABLE>

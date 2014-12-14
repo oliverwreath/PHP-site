@@ -3,14 +3,17 @@ include('header.php');
 include('auth.php');
 ?>
 
-
 <h2>Create an Account</h2>
 
 <form action="" method="post">
 	<table>
 		<tr>
-			<td>Name</td>
+			<td>NickName</td>
 			<td><input type="text" name="name" /></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="text" name="email" /></td>
 		</tr>
 		<tr>
 			<td>Password</td>
@@ -24,55 +27,55 @@ include('auth.php');
 			</select>
 			</td>
 		</tr>
-
-		<tr>
-			<td>Email</td>
-			<td><input type="text" name="email" /></td>
-		</tr>
-
 	</table>
 	<input type="submit" />
 </form>
 
-
-
 <?php
-if(
-$_POST["name"]!="" &&
-$_POST["password"]!="" &&
-$_POST["email"]!="" &&
-$_POST["account_type"]!=""
-) {
+if($_POST["name"]==""){
+	die('Empty name.');
+}
+if($_POST["email"]==""){
+	die('Empty Email.');
+}
+if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+	die('Invalid Email.');
+}
+if($_POST["password"]==""){
+	die('Empty password.');
+}
+if($_POST["account_type"]==""){
+	die('Empty account_type.');
+}
+{
 	$name=$_POST["name"];
 	$password=$_POST["password"];
 	$email=$_POST["email"];
 	$account_type=$_POST["account_type"];
-} else {
-	die('Please input the above fields.' . mysql_error());
-
 }
-$connection = mysql_connect($server,$user,$pass);
+
+$connection = mysql_connect($server, $user, $pass);
 if (!$connection) {
-	die('Could not connect1: ' . mysql_error());
+	die('Could not connect to mySql: ' . mysql_error());
 }
 
 mysql_select_db($db, $connection);
-$existing_id=mysql_query("SELECT id FROM `User` WHERE email = '$email' OR name='$name' LIMIT 0,1 ");
+$existing_id = mysql_query("SELECT id FROM `User` WHERE email = '$email' LIMIT 0,1");
 if (! $existing_id) {
-	die('Could not connect2: ' . mysql_error());
+	die('Could not select database: ' . mysql_error());
 }
 $user_exists = mysql_num_rows($existing_id)>0;
 if($user_exists) {
-	die('User already exists.' . mysql_error());
-
+	die('User with that email already registered.' . mysql_error());
 }
-$insert_user =mysql_query("INSERT INTO `$db`.`User` (`id`, `name`, `email`, `password`) VALUES (NULL, '$name', '$email','$password')"); 
+
+$insert_user = mysql_query("INSERT INTO `$db`.`User` (`id`, `name`, `email`, `password`) VALUES (NULL, '$name', '$email','$password')"); 
 if (!$insert_user) {
 	die('Query error: ' . mysql_error());
 }
 
 // Shows which userid was generated for User
-$newuser=mysql_query("SELECT * FROM `User` WHERE email = '$email' LIMIT 0,1");
+$newuser = mysql_query("SELECT * FROM `User` WHERE email = '$email' LIMIT 0,1");
 if (!$newuser ) {
 	die('Query error ' . mysql_error());
 }
@@ -94,9 +97,4 @@ if($account_type=="tutor") {
 } else {
 	die("Invalid user type");
 }
-
-
-
 ?>
-
-

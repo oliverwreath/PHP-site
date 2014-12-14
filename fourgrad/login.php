@@ -45,7 +45,11 @@ $row = mysql_fetch_array($result);
 if($row['id']!=NULL && $row['password']==$password) {
 	// Place userid in session. User is considered LOGGED IN.
 	$_SESSION['userid'] = $row['id'];
-	echo "Login success.";
+	$_SESSION['userName'] = $row['name'];
+	$_SESSION['userEmail'] = $row['email'];
+	echo "Login success. Welcome back";
+	echo $_SESSION['userid'];
+	echo "!";
 	echo '<meta http-equiv="refresh" content="0;url=http://www.skywalkerhunter.com/fourgrad/index.php" />';
 } else {
 	die('Access denied. Please enter valid credentials.');

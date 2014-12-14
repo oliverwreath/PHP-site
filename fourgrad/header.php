@@ -54,6 +54,8 @@ session_start();
 	{
 		print "Welcome Back! UserID: ";
 		print $_SESSION['userid']. "";
+		print " UserName: ";
+		print $_SESSION['userName']. "";
 		print " <a href=logout.php>Logout</a>";
 	}
 	else
